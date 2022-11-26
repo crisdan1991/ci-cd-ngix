@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_2ad239f0f8564ba7aabe88cc2c335d01 }}/dan1991/cimipagina:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_2ad239f0f8564ba7aabe88cc2c335d01 }}/cimipagina:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
